@@ -1,0 +1,83 @@
+﻿@{
+    Layout = "_Layout";
+}
+@model Examen_Razas.Models.ViewModels.InfoPerroViewModel
+<div class="grid">
+    <h1 class="head">@Model.Name</h1>
+
+    <section class="descripcion">
+        <p>
+            @Model.Descripcion
+        </p>
+
+        <div class="datos">
+            <h3>Datos</h3>
+            <label>Otros nombres: </label>
+            <span id="otrosNombre">@Model.Descripcion</span>
+            <br />
+            <label>País de Origen: </label>
+            <span id="pais">@Model.Pais</span>
+            <br />
+            <label>Peso: </label>
+            <span id="peso">@Model.PesoMin kg - @Model.PesoMax kg</span>
+            <br />
+            <label>Altura: </label>
+            <span id="altura">@Model.AlruraMin cm - @Model.AlruraMax cm</span>
+            <br />
+            <label>Esperanza de Vida: </label>
+            <span id="vida">@Model.EsperanzaVida años</span>
+            <br />
+        </div>
+        <div class="datos">
+            <h3>Caracteristicas Físicas</h3>
+            <label>Patas: </label>
+            <span id="patas"> @Model.Patas</span>
+            <br />
+            <label>Cola: </label>
+            <span id="cola"> @Model.Patas</span>
+            <br />
+            <label>Hocico: </label>
+            <span id="hocico"> @Model.Hosico</span>
+            <br />
+            <label>Pelo: </label>
+            <span id="pelo"> @Model.Pelo</span>
+            <br />
+            <label>Color: </label>
+            <span id="color"> @Model.Color</span>
+        </div>
+
+
+    </section>
+
+
+
+
+    <section class="fotos">
+        <img src="~/imgs/@(Model.Id)_0.jpg" id="fotoPerro" />
+    </section>
+
+    <section class="otrosPerros">
+
+        <a href='~/InfoPerro/'>
+            <img src='imgs/84_0.jpg' />
+            <h2>Pointer Inglés</h2>
+        </a>
+
+        <a href='InfoPerro.html'>
+            <img src='imgs/105_0.jpg' />
+            <h2>Border Collie</h2>
+        </a>
+
+        <a href='InfoPerro.html'>
+            <img src='imgs/72_0.jpg' />
+            <h2>Bull Terrier</h2>
+        </a>
+
+        <a href='InfoPerro.html'>
+            <img src='imgs/73_0.jpg' />
+            <h2>Fox Terrier</h2>
+        </a>
+
+    </section>
+</div>
+

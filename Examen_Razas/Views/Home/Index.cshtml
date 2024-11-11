@@ -1,0 +1,24 @@
+﻿@model IEnumerable<Examen_Razas.Models.ViewModels.InfoPerroViewModel>
+@{
+    Layout = "_Layout";
+}
+
+<section class="titulo">
+    <h2>ABC de Razas</h2>
+    <input type="search" placeholder="Filtrar..." />
+</section>
+<section class="list">
+
+    @foreach (var perro in Model)
+    {
+
+        <a href="~/InfoPerro/@perro.Name.Replace(" ","_")">
+            <img src="~/imgs/@(perro.Id)_0.jpg" />
+            @perro.Name
+        </a>
+    }
+
+
+
+</section>
+

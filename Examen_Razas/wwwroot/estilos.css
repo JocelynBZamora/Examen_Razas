@@ -1,0 +1,176 @@
+﻿@font-face {
+    font-family: GoodDog;
+    src: url('GoodDog.ttf');
+}
+
+body {
+    background-color: #ffc82f;
+    margin: 0;
+}
+
+header {
+    padding: 20px;
+    background-color: #f1b30f;
+    border-bottom: 1px solid #564100;
+    margin-bottom: 10px;
+}
+
+    header h1 {
+        font-family: GoodDog;
+        background-image: url('imgs/logo.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding-left: 90px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+        header h1 a {
+            text-decoration: none;
+            font-size: 70px;
+            color: #564100;
+        }
+
+main {
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 30px;
+    font-family: Tahoma;
+}
+
+    main .titulo {
+        border-bottom: 1px solid #247eb0;
+        margin-bottom: 10px;
+    }
+
+        main .titulo h2 {
+            /*background-color: red;*/
+            display: inline;
+            color: #247eb0;
+        }
+
+        main .titulo input {
+            box-sizing: border-box;
+            width: 299px;
+            border: 1px solid lightgray;
+            padding: 3px 3px 3px 30px;
+            background-image: url('imgs/search.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            float: right;
+        }
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+     gap:10px;
+    justify-content: space-around;
+    align-items:flex-end;
+}
+
+    .list a {
+        width: 150px;
+        height: 130px;
+        /* background-color: red;*/
+        text-decoration: none;
+        font-size: small;
+        text-align: center;
+    }
+
+        .list a img {
+            border: 1px solid lightgray;
+            width: 100%;
+            padding: 5px;
+        }
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #564100;
+    border-top: 1px solid #564100;
+    background-color: #f1b30f;
+    
+}
+
+/*INFO PERROS*/
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+    grid-template-areas:
+        "head head"
+        "descripcion fotos"
+        "otrosPerros otrosPerros"
+}
+.head {
+    grid-area: head;
+    background-color: #247eb0;
+    color:white;
+    text-transform:uppercase;
+    margin:0;
+    padding:5px;
+    text-align:center;
+    letter-spacing:2px;
+}
+.descripcion{
+    grid-area:descripcion;
+   /* background-color:red;*/
+   
+}
+
+    .descripcion p {
+        text-align: justify;
+        font-size: large;
+        margin:0;
+    }
+
+    .descripcion .datos{
+       /* background-color:aqua;*/
+        width:50%;
+        float:left;
+    }
+
+        .descripcion .datos label {
+            color: #247eb0;
+        }
+
+
+.fotos{
+    grid-area:fotos;
+    /*background-color:green;*/
+}
+.fotos img{
+    width:100%;
+}
+
+.otrosPerros{
+    grid-area:otrosPerros;
+    display:flex;
+    gap:10px;
+
+}
+    .otrosPerros a {
+        width: 25%;
+        text-decoration: none;
+        /* background-color:red;*/
+    }
+
+.otrosPerros a img{
+    width:100%;
+}
+    .otrosPerros a h2 {
+        background-color: #247eb0;
+        color: white;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 5px;
+        text-align: center;
+        letter-spacing: 2px;
+        
+        font-size:medium;
+    }
+
+
